@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk - UMKM Kopi Nusantara</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <h1>Kopi Nusantara</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="Logo UMKM" width="40" height="40" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Kami</a></li>
+            <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li>
+            <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+            <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Produk Unggulan Kami</h2>
+    <p>Berikut daftar produk Kopi Nusantara yang kami sediakan</p>
+
+    <table border="1" cellspacing="0" cellpadding="8">
+      <thead>
+        <tr>
+          <th>Produk</th>
+          <th>Ukuran</th>
+          <th>Harga</th>
+          <th>Jenis Kopi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Kopi Arabika Gayo</td>
+          <td>250g</td>
+          <td>Rp. 45.000</td>
+          <td rowspan="2">Arabika</td>
+        </tr>
+        <tr>
+          <td>Kopi Arabika Petungkriyono</td>
+          <td>300g</td>
+          <td>Rp. 48.500</td>
+        </tr>
+        <tr>
+          <td>Kopi Robusta Batang</td>
+          <td>250g</td>
+          <td>Rp. 46.000</td>
+          <td rowspan="3">Robusta</td>
+        </tr>
+        <tr>
+          <td>Kopi Robusta Temanggung</td>
+          <td>250g</td>
+          <td>Rp. 38.000</td>
+        </tr>
+        <tr>
+          <td>Kopi Robusta Linggoasri</td>
+          <td>225g</td>
+          <td>Rp. 35.000</td>
+        </tr>
+        <tr>
+          <td>Kopi Liberika Riau</td>
+          <td>250g</td>
+          <td>Rp. 42.000</td>
+          <td rowspan="2">Liberika</td>
+        </tr>
+        <tr>
+          <td>Kopi Liberika Banjar</td>
+          <td>300g</td>
+          <td>Rp. 43.000</td>
+        </tr>
+        <tr>
+          <td colspan="4" style="text-align: center; background-color: #eee;">
+            Semua Harga Sudah Termasuk PPN
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 🔽 Letakkan rating produk di luar tabel -->
+    <h3>Rating Produk: <span id="hasil-rating"></span></h3>
+
+    <h3>Profil Produk</h3>
+    <img src="images/kopi.jpg" alt="Kemasan Kopi Arabika" width="200" />
+    <img src="images/kopi2..jpg" alt="Kemasan Kopi Arabika" width="240" />
+    <img src="images/kopi3.jpg" alt="Kemasan Kopi Arabika" width="300" />
+    <p>Kopi ini berasal dari dataran tinggi Gayo, memiliki cita rasa asam segar dan aroma kopi yang khas.</p>
+
+    <h3>Lihat Video Kami</h3>
+    <video width="320" height="240" controls>
+      <source src="video/0910.mp4" type="video/mp4">
+      Browser Anda tidak mendukung video.
+    </video>
+    <h3>Daftar Wishlist Produk</h3>
+    <form>
+      <input type="text" id="produkInput" placeholder="Nama produk..." />
+      <p>Preview: <span id="previewProduk"></span></p>
+      <button id="tambahBtn">Tambah Produk</button>
+    </form>
+    <ul id="daftarProduk"></ul>
+    <hr />
+    <label for="temaSelect">Pilih Tema Warna: </label>
+    <select id="temaSelect">
+      <option value="white">Putih</option>
+      <option value="lightblue">Biru Muda</option>
+      <option value="lightyellow">Kuning Muda</option>
+    </select>
+  </main>
+  <script src="script.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</html>
